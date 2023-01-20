@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&family=Mukta:wght@500&display=swap"
+        rel="stylesheet">
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        h1 {
+            color: #E50914;
+            display: inline-block;
+            font-size: 7vh;
+            margin-left: 5vh;
+            position: relative;
+            top: 2vh;
+        }
+
+        
+
+        #sign_in a li {
+            display: inline-block;
+            border: 0.5vh;
+            background-color: #E50914;
+            color: white;
+            text-decoration: none;
+            padding: 1.7vh 2.5vh;
+            border-radius: 0.6vh;
+            margin-top: -1.3vh;
+            margin-right: 6vh;
+        }
+
+        .container nav {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: space-between;
+            background-color: black;/* temproary*/
+            background-image: url('net.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background: rgba(18, 15, 15, 0.81);
+        }
+
+        select {
+            position: relative;
+            top: 4.5vh;
+            bottom: 0vh;
+            right: 0vh;
+            left: -13vh;
+            padding: 1.4vh;
+            margin-left: -2vh;
+            border: 0.1vh solid white;
+            background-color:black;
+            color: white;
+            border-radius: 0.4vh;
+        }
+
+        .bigcontainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100%;
+            flex-direction: column;
+            color: white;
+            background-color: black; /*temproary*/
+            background-image: url('net.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background: rgba(18, 15, 15, 0.793);
+        }
+
+        
+
+        
+
+        #submitbutton {
+            color: white;
+            background-color: #E50914;
+            padding: 3.3vh;
+            border-radius: 0vh;
+            position: relative;
+            top: 0vh;
+        }
+
+        #firstpara1 {
+            font-size: 10vh;
+            font-family: 'Kanit', sans-serif;
+            font-family: 'Mukta', sans-serif;
+            font-weight: bold;
+
+        }
+        #firstpara2 {
+            font-size: 10vh;
+            font-family: 'Kanit', sans-serif;
+            font-family: 'Mukta', sans-serif;
+            margin-top: -2vh;
+            font-weight: bold;
+
+        }
+
+
+        #secondpara {
+            font-size: 4vh;
+            font-family: 'Kanit', sans-serif;
+            font-family: 'Mukta', sans-serif;
+            margin-top: -2vh;
+            
+        }
+
+        #thirdpara {
+            font-size: 3vh;
+            font-family: 'Kanit', sans-serif;
+            font-family: 'Mukta', sans-serif;
+            
+        }
+        #submitbutton{
+            border: #E50914;
+            font-size: 4vh;
+        }
+        #useremail{
+            border: white;
+            height: 11vh;
+            width: 67vh;
+            margin-top: -0.8vh;
+            position: relative;
+            top: -0.8vh;
+        }
+        
+        .image1{
+            background-image: url('net.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        select option{
+            background-color: rgb(85, 83, 83);
+        }
+        #submitbutton:hover{
+            background-color: #ff0000;
+        }
+        footer ul {  
+            list-style: none;
+        }
+        footer ul a li{
+            color: #737373;
+            padding: 1vh;
+            font-size: small;
+            
+        }
+        footer ul{
+            margin:12vh 0vh 8vh 0vh;
+        }
+        footer{
+           height: 0vh;
+           width: 100%;
+           background-color: black;
+           position: relative;
+           
+        }
+        .listseries{
+            
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+        }
+        
+        .btn{
+           display: flex;
+           justify-content: center;
+           align-items: flex-end;
+           position: absolute;
+           top: 43.5vh;
+           left: -41vh;
+           right: 0vh;
+           bottom: 0vh;
+         
+        }
+        #btn2{
+            background-color: black;
+            color: white;
+            padding-left: 2.4vh;
+            padding-top: 2vh;
+        }
+        .btn2 option{
+            background-color: #737373;
+            color: white;
+        }
+        #lastpara{
+            position: absolute;
+            top: 9vh;
+            left:-26vh ;
+            right: 0vh;
+            bottom:0vh ;
+            font-size: x-small;
+        }
+        #footpara a{
+            text-decoration: none;
+        }
+        #footpara a:hover{
+            
+            text-decoration: underline;
+        }
+        
+        
+        
+    </style>
+
+</head>
+
+<body>
+    <div class="image1">
+    <div class="container">
+        <header>
+            <nav>
+                <h1>NETFLIX</h1>
+                <form action="#">
+                    <select name="language_selection" id="language_selection">
+                        <option value="English">English</option>
+                        <option value="हिन्दी">हिन्दी</option>
+                    </select>
+                    <ul id="sign_in">
+                        <a href="#">
+                            <li>Sign In</li>
+                        </a>
+                    </ul>
+                </form>
+            </nav>
+        </header>
+
+    </div>
+    <div class="bigcontainer">
+        <p id="firstpara1">Unlimited movies, TV <br>
+        <pre id="firstpara2">  shows and more.</pre>
+        </p> <br>
+        <p id="secondpara">Watch anywhere. Cancel anytime.</p> <br>
+        <p id="thirdpara">Ready to watch? Enter your email to create or restart your membership.</p> <br>
+        <form action="#">
+            <input type="email" placeholder="Email address" name="useremail" required id="useremail"><button
+                type="submit" id="submitbutton">Get Started  ></button>
+        </form>
+        
+    </div>
+    
+</div>
+<footer>
+    
+    <div class="listseries">
+    <ul class="list12">
+        <p id="footpara">Questions? Call<a href="#"> 7079369859</a> </p>
+        <a href="#"> <li>FAQ</li> </a>
+        <a href="#"> <li>Investors Relation</li> </a>
+        <a href="#"> <li>Privacy</li> </a>
+        <a href="#"> <li>Speed Test</li> </a>
+    </ul>
+    <ul class="list1">
+        <a href="#"><li>Help Centre</li></a>
+        <a href="#"><li>Jobs</li></a>
+        <a href="#"><li>Cookie Preferences</li></a>
+        <a href="#"><li>Legal Notices</li></a>
+    </ul>
+    <ul class="list1">
+        <a href="#"> <li>Account</li> </a>
+        <a href="#"> <li>Ways to Watch</li> </a>
+        <a href="#"> <li>Corporate Information</li> </a>
+        <a href="#"> <li>Only on Netflix</li> </a>
+    </ul>
+    <ul class="list1">
+        <a href="#"> <li>Media Centre</li> </a>
+        <a href="#"> <li>Terms of Use</li> </a>
+        <a href="#"> <li>Contact Us</li> </a>
+        
+    </ul>
+</div>
+
+<div class="btn">
+    <select name="choosinglanguage" id="btn2">
+        <option class="opt"value="English">English</option>
+        <option class="opt"value="हिन्दी">हिन्दी</option>
+    </select>
+    
+    <p id="lastpara">Netflix India</p>
+
+</div>
+
+</footer>
+</body>
+
+</html>
